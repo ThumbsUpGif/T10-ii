@@ -1,0 +1,202 @@
+* {
+    box-sizing: border;
+    margin: 0;
+    padding: 0;
+}
+
+:root {}
+
+body {
+    font-size: 19px;
+}
+
+.main {
+    max-width: 1600px;
+    /* min-width: 360px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.hero {
+    /* background-color: coral; */
+    top: 0%;
+    /* display: flex; */
+    /* justify-content: center; */
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.hero__colourbox {
+    /* position: relative; */
+    background-color: #e7ec00;
+    background-image: linear-gradient(0deg, #e7ec00 0%, #ec00ec 100%);
+    grid-column: 1 / 8;
+    grid-row: 1 / 7;
+    z-index: -3;
+    border: solid 4vw #fff;
+}
+
+.slogan--1 {
+    /* position: absolute; */
+    grid-row: 4 / 4;
+    grid-column: 2 / 7;
+    z-index: 10;
+
+    /* margin-top: 25vh; */
+    /* height: 30vw; */
+}
+
+.slogan--2 {
+    grid-row: 5 / 7;
+    grid-column: 3 / 9;
+    z-index: 10;
+    transform: translateY(-5vh);
+    /* margin: 1rem; */
+}
+
+
+.photo--1 {
+    position: relative;
+    background-image: url('../media/photo/emmanuel-ikwuegbu-ZsObS42_i_0-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    filter: saturate(0%)contrast(0.9);
+    grid-column: 8 / 12;
+    grid-row: 2/6;
+    z-index: 5;
+}
+
+
+.photo--2 {
+    background-image: url('../media/photo/piotr-chrobot-6oUsyeYXgTg-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    filter: saturate(0%)contrast(0.9) brightness(150%);
+    z-index: 3;
+    grid-row: 6 / 12;
+    grid-column: 5 / 10;
+    transform: translateY(10vh);
+}
+
+
+.grid__text {
+    display: grid;
+    grid-template-columns: repeat(12, 8.33vw);
+    grid-template-rows: repeat(30, 16vh);
+}
+
+
+
+.when_text {
+    /* background-color: red; */
+    grid-column: 2 / 6;
+    grid-row: 4/7;
+    /* height: auto; */
+    transform: translateY(-8vh);
+    max-width: 560px;
+}
+
+.spacer--1 {
+    width: 20vw;
+    height: 4px;
+    transform: translateX(-20px);
+    background-color: #01E3AD;
+    margin-bottom: 1.5vmax;
+}
+
+.about__colourbox {
+    background-color: #00eca5;
+    background-image: linear-gradient(180deg, #00eca5 0%, #0097ec 100%);
+    grid-column: 7 / 12;
+    grid-row: 3/10;
+    z-index: -5;
+}
+
+
+.photo--3 {
+    background-image: url('../media/photo/muhammadtaha-ibrahim-ma-aji-anwtuO4gNqc-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    filter: saturate(0%)contrast(1.1) brightness(90%);
+    grid-column: 7 / 11;
+    grid-row: 6 / 13;
+    transform: translateX(4vw);
+    z-index: 5;
+}
+
+
+
+
+.graphic--1 {
+    background-image: url('../media/svg/noun_covid-19_3776320.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: opacity(40%);
+    grid-column: 2 / 4;
+    grid-row: 12/14;
+    transform: translate(-4vh, -8vh);
+    transform: rotate(8deg);
+    z-index: -10;
+
+}
+
+/* .you {
+    position: relative;
+    min-height: 900px;
+    display: grid;
+    grid-template-columns: 12 / 8.33vw;
+    grid-template-rows: repeat(14, 16vh);
+} */
+
+.introduce-fund {
+    grid-column: 4 / 9;
+    grid-row: 14/19;
+    height: auto;
+    /* transform: translateY(-8vh); */
+    max-width: 560px;
+}
+
+.spacer--2 {
+    width: 20vw;
+    height: 4px;
+    transform: translateX(-20px);
+    background-color: #51b8b8;
+    margin-bottom: 1.5vmax;
+}
+
+.graphic--2 {
+    background-image: url('../media/svg/noun_covid\ research_4276452.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: opacity(40%);
+    grid-column: 10 / 12;
+    transform: translateY(-8vh);
+    grid-row: 19/21;
+    z-index: -3;
+}
+
+.you__colourbox {
+    background-color: #f2a580;
+    background-image: linear-gradient(1deg, #f2a580 0%, #51b8b8 100%);
+    grid-column: 1 / 13;
+    grid-row: 20 / 24;
+    z-index: -5;
+
+}
+
+.photo--4 {
+    background-image: url('../media/photo/emmanuel-ikwuegbu-_TyO_4qQizU-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: saturate(0%)contrast(1.1) brightness(90%);
+    grid-column: 6 / 12;
+    grid-row: 21 / 27;
+    transform: translateY(8vh);
+    z-index: 5;
+
+}
