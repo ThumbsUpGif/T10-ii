@@ -1,0 +1,17 @@
+
+.anim {
+    opacity: 0;
+}
+
+
+@keyframes anim1 {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to  {
+        transform: translate(0);
+        opacity: 1;
+    }
+}

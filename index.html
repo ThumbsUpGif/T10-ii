@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/viewport-laptop.css">
     <link rel="stylesheet" href="css/viewport-desktop-M.css">
     <link rel="stylesheet" href="css/viewport-desktop-L.css">
+    <link rel="stylesheet" href="css/keyframes.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,11 +45,11 @@
 
             </div>
 
-            <div class="slogan--1 slogan--format">
+            <div class="slogan--1 slogan--format anim" data-delay="0.3s">
                 <h1>We're not OK</h1>
             </div>
 
-            <div class="slogan--2 slogan--format">
+            <div class="slogan--2 slogan--format anim" data-delay="0.5s">
                 <h1>until everyone's OK</h1>
             </div>
 
@@ -69,27 +70,27 @@
         <section class="grid__text">
 
             <div class="when_text">
-                <h3>When will the pandemic end?</h3>
+                <h3 class="anim" data-delay=".3s">When will the pandemic end?</h3>
 
-                <div class="spacer--1">
+                <div class="spacer--1 anim" data-delay="0.4s">
 
                 </div>
 
                 <p>
-                    <span>The rate at which vaccines have been developed and distributed</span>
-                    <span>has been impressive. In the Western world record numbers have </span>
-                    <span>been vaccinated against Covid-19 in a matter of months. Right </span>
-                    <span>now we see countries such as Denmark and Norway return </span>
-                    <span>to normal, whilst managing to keep the rate of serious illness at </span>
-                    <span>acceptable levels thanks to the collective immunity built up by </span>
-                    <span>their vaccination drives. </span>
+                    <span class="anim" data-delay="0.1s">The rate at which vaccines have been developed and distributed</span>
+                    <span class="anim" data-delay="0.2s">has been impressive. In the Western world record numbers have </span>
+                    <span class="anim" data-delay="0.3s">been vaccinated against Covid-19 in a matter of months. Right </span>
+                    <span class="anim" data-delay="0.4s">now we see countries such as Denmark and Norway return </span>
+                    <span class="anim" data-delay="0.5s">to normal, whilst managing to keep the rate of serious illness at </span>
+                    <span class="anim" data-delay="0.6s">acceptable levels thanks to the collective immunity built up by </span>
+                    <span class="anim" data-delay="0.7s">their vaccination drives. </span>
                     <br><br>
-                    <span>Imagine then, being among the millions of young people across </span>
-                    <span>the African continent whose careers, studies and social life have </span>
-                    <span>been put on hold for an indefinite amount of time. </span>
-                    <span>Of all the Covid-19 vaccines administered until now, only 2% </span>
-                    <span>have been given to people in Africa. What this means is that </span>
-                    <span>only 4,5% of Africans have received a Covid-19 jab so far. </span>
+                    <span class="anim" data-delay="0.8s">Imagine then, being among the millions of young people across </span>
+                    <span class="anim" data-delay="0.9s">the African continent whose careers, studies and social life have </span>
+                    <span class="anim" data-delay="1.0s">been put on hold for an indefinite amount of time. </span>
+                    <span class="anim" data-delay="1.1s">Of all the Covid-19 vaccines administered until now, only 2% </span>
+                    <span class="anim" data-delay="1.2s">have been given to people in Africa. What this means is that </span>
+                    <span class="anim" data-delay="1.3s">only 4,5% of Africans have received a Covid-19 jab so far. </span>
                 </p>
 
             </div>
@@ -110,7 +111,7 @@
 
 
 
-            <div class="introduce-fund">
+            <div class="introduce-fund anim" data-delay=".1s">
                 <h3>
                     Lorem Ipsum
                 </h3>
@@ -149,8 +150,30 @@
 
     </div> <!-- main -->
 
-    <script src="JS/main.js"></script>
-    <script src="JS/in-view.js"></script>
+    <script>
+        const images = document.querySelectorAll('.anim')
+
+        observer = new IntersectionObserver((entries) => {
+            console.log(entries);
+
+            entries.forEach(entry => {
+                if (entry.intersectionRatio > 0) {
+                    entry.target.style.animation = `anim1 1s ${entry.target.dataset.delay} forwards ease`
+                } else {
+                    entry.target.style.animation = `none`;
+                }
+            })
+        })
+ 
+        images.forEach(image => {
+        observer.observe(image)
+    })
+
+    </script>
+
+
+    <!-- <script src="JS/main.js"></script> -->
+    <!-- <script src="JS/in-view.js"></script> -->
 </body>
 
 </html>
