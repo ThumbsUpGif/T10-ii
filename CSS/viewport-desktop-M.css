@@ -148,4 +148,11 @@
     
     }
 
+    .results {
+        grid-column: 3 / 7;
+        grid-row: 30/36;
+        height: auto;
+        max-width: 560px;
+    }
+
 }

@@ -1,0 +1,52 @@
+
+
+.hero__colourbox {
+    /* position: relative; */
+    background-color: #e7ec00;
+    background-image: linear-gradient(0deg, #e7ec00 0%, #ec00ec 100%);
+    z-index: -3;
+    border: solid 4vw #fff;
+}
+
+
+.about__colourbox {
+    background-color: #00eca5;
+    background-image: linear-gradient(180deg, #00eca5 0%, #0097ec 100%);
+    z-index: -5;
+}
+
+.you__colourbox {
+    background-color: #f2a580;
+    background-image: linear-gradient(1deg, #f2a580 0%, #51b8b8 100%);
+    z-index: -5;
+
+}
+
+
+
+
+.spacer--1 {
+    width: 20vw;
+    height: 4px;
+    transform: translateX(-20px);
+    background-color: #01E3AD;
+    margin-bottom: 1.5vmax;
+}
+
+
+.spacer--2 {
+    width: 20vw;
+    height: 4px;
+    transform: translateX(-20px);
+    background-color: #51b8b8;
+    margin-bottom: 1.5vmax;
+}
+
+
+.spacer--3 {
+    width: 20vw;
+    height: 4px;
+    transform: translateX(-20px);
+    background-color: #f2a580;
+    margin-bottom: 1.5vmax;
+}
