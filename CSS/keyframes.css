@@ -41,8 +41,8 @@
 
 @keyframes anim3 {
     0% {
-        transform: scale(0.9);
-        opacity: 0.4;
+        transform: scale(0.96);
+        opacity: 0.6;
     }
 
     50% {
@@ -66,8 +66,8 @@
 
 @keyframes anim4 {
     0% {
-        transform: scale(0.9);
-        opacity: 0.8;
+        transform: scale(0.97);
+        opacity: 0.9;
     }
 
 
@@ -98,3 +98,18 @@
     }
 
 }
+
+@keyframes results-svg {
+    0% {
+        /* transform: translateY(-300px);  */
+        opacity: 0.9;
+        transform: scale(3);
+    }
+
+    100% {
+        /* transform: translateY(0px); */
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+

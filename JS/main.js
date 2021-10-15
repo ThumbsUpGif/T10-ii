@@ -83,6 +83,7 @@ observer = new IntersectionObserver((entries) => {
 
 boxes.forEach(box => {
     observer.observe(box)
+
 })
 
 
@@ -94,7 +95,7 @@ console.log(entries);
 entries.forEach(entry => {
 if (entry.intersectionRatio > 0) {
     entry.target.style.animation =
-        `anim5 1s ${entry.target.dataset.delay} forwards ease-in`
+        `anim5 1s ${entry.target.dataset.delay} forwards linear`
     observer.unobserve(entry.target)
 } else {
     entry.target.style.animation = `none`;
@@ -104,5 +105,26 @@ if (entry.intersectionRatio > 0) {
 
 graphics.forEach(graphic => {
 observer.observe(graphic)
+})        
+
+
+const icons = document.querySelectorAll('.anim6')
+
+observer = new IntersectionObserver((entries) => {
+console.log(entries);
+
+entries.forEach(entry => {
+if (entry.intersectionRatio > 0) {
+    entry.target.style.animation =
+        `results-svg 0.6s ${entry.target.dataset.delay} forwards linear`
+    observer.unobserve(entry.target)
+} else {
+    entry.target.style.animation = `none`;
+}
+})
+})
+
+icons.forEach(icon => {
+observer.observe(icon)
 })        
 

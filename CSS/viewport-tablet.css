@@ -102,4 +102,19 @@
         /* transform: translateY(-4vh); */
 
     }
+
+    .results {
+        grid-column: 3 / 9;
+        grid-row: 45/49;
+        height: auto;
+        max-width: 560px;
+    }
+
+    .stats {
+        grid-column: 5 / 11;
+        grid-row: 57/65;
+        height: auto;
+        max-width: 560px;
+
+    }
 }

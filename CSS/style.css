@@ -50,7 +50,7 @@ body {
 
 
 .photo--2 {
-    background-image: url('../media/photo/piotr-chrobot-6oUsyeYXgTg-unsplash.jpg');
+    background-image: url('../media/photo/piotr-chrobot-6oUsyeYXgTg-unsplash.png');
     background-repeat: no-repeat;
     background-size: contain, cover;
     filter: saturate(0%)contrast(0.9) brightness(150%);
@@ -119,6 +119,75 @@ body {
 
 }
 
-.red-background {
+ul {
+    list-style: outside none none;
+}
+
+
+.results .stats li {
+    padding-top: 0.5rem;
+    max-width: 560px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.results .stats p {
+    width: 80%;
+    align-self: center;
+}
+
+.results .stats img{
+    height: 6rem;
+    width: 20%;
+    align-self: center;
+    opacity: 0;
+}
+
+
+.results .stats .ppe {
     background-color: red;
 }
+
+.results .stats .ppe img{
+    background-color: pink;
+}
+
+
+
+
+.results .stats .tests p {
+    background-color: green;
+}
+
+.results .stats .tests img {
+    background-color: lightgreen;
+}
+
+.results .stats .intensive-care p {
+    background-color: blue;
+}
+
+.results .stats .intensive-care img {
+    background-color: lightblue;
+}
+
+.results .stats .respirator-masks p{
+    background-color: purple;
+}
+
+.results .stats .respirator-masks img{
+    background-color: violet;
+}
+
+
+.results .stats .emergency-teams p{
+    background-color: orange;
+}
+
+.results .stats .emergency-teams img{
+    background-color: yellow;
+}
+
+
+
+
