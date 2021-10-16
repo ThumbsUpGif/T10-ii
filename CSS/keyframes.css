@@ -1,5 +1,6 @@
 
-.anim1 {
+.anim1,
+.anim-when {
     opacity: 0;
 }
 
@@ -17,12 +18,13 @@
 }
 
 
-.anim2 {
+
+.anim-list-item{
     opacity: 0;
 }
 
 
-@keyframes anim2 {
+@keyframes anim-list-item {
     from {
         transform: translatex(-2vw);
         opacity: 0;
@@ -33,6 +35,43 @@
         opacity: 1;
     }
 }
+
+.anim-subheading{
+    opacity: 0;
+}
+
+
+@keyframes anim-subheading {
+    from {
+        transform: translateY(-2vw);
+        opacity: 0;
+    }
+
+    to  {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.anim-spacer{
+    opacity: 0;
+}
+
+
+@keyframes anim-spacer {
+    from {
+        transform: translateX(-6vw);
+        opacity: 0.8;
+    }
+
+    to  {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
 
 .anim3 {
     opacity: 0;
@@ -79,7 +118,8 @@
 
 }
 
-.anim5 {
+.anim5,
+.you__colourbox {
     opacity: 0;
 }
 

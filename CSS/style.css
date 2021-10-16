@@ -125,7 +125,7 @@ ul {
 
 
 .results .stats li {
-    padding-top: 0.5rem;
+    padding-top: 1rem;
     max-width: 560px;
     display: flex;
     justify-content: space-between;
@@ -144,6 +144,9 @@ ul {
 }
 
 
+
+
+/* 
 .results .stats .ppe {
     background-color: red;
 }
@@ -151,9 +154,6 @@ ul {
 .results .stats .ppe img{
     background-color: pink;
 }
-
-
-
 
 .results .stats .tests p {
     background-color: green;
@@ -187,7 +187,7 @@ ul {
 .results .stats .emergency-teams img{
     background-color: yellow;
 }
-
+ */
 
 
 

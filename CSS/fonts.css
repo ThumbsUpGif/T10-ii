@@ -15,7 +15,8 @@ h3 {
     color: #111;
     font-size: clamp(1.62rem, 1vmax + 1rem, 3rem);
     /* letter-spacing: 0.05rem; */
-    margin-bottom: 0.5vmax;
+    /* margin-bottom: 0.5vmax; */
+    padding: 3vmin 0 1vmin 3vmin;
 
 }
 

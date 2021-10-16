@@ -66,7 +66,7 @@
     .grid__text {
         display: grid;
         grid-template-columns: repeat(12, 8.33vw);
-        grid-template-rows: repeat(30, 8.33vw);
+        grid-template-rows: repeat(50, 8.33vw);
     }
     
     
@@ -94,9 +94,10 @@
     
     
     .photo--3 {
-        grid-column: 7 / 11;
+        grid-column: 8 / 11;
         grid-row: 6 / 13;
-        transform: translateX(4vw);
+        /* transform: translateY(4vw); */
+        /* transform: translateX(4vw); */
     }
     
     
@@ -147,12 +148,14 @@
 
     .results {
         grid-column: 3 / 9;
-        grid-row: 26/36;
-        height: auto;
+        grid-row: 26/40;
+        /* height:  */
         max-width: 560px;
     }
 
-
+    .donation {
+        grid-row: 42/45;
+    }
 
 
 }

@@ -18,7 +18,7 @@
 
     .photo--1 {
         grid-row: 2/4;
-        grid-column: 7 / 12;
+        grid-column: 6 / 12;
         z-index: 5;
     }
 
@@ -26,14 +26,14 @@
         grid-row: 4 / 6;
         grid-column: 2 / 9;
         z-index: 10;
-        transform: translateY(1vmax);
+        /* transform: translateY(1vmax); */
     }
 
     .slogan--2 {
         grid-row: 5 / 9;
         grid-column: 2 / 11;
         z-index: 10;
-        /* transform: translateY(-4vmin); */
+        transform: translateY(-8vh);
     }
 
     .photo--2 {
@@ -43,9 +43,15 @@
         transform: translateY(10vh);
     }
 
+    .grid__text {
+        display: grid;
+        grid-template-columns: repeat(12, 8.33vw);
+        grid-template-rows: repeat(70, 8.33vw);
+    }
+
     .when_text {
         grid-column: 2 / 10;
-        grid-row: 5/9;
+        grid-row: 4/9;
         /* height: auto; */
         /* transform: translateY(-8vh); */
     }
@@ -69,7 +75,7 @@
 
     .photo--3 {
         grid-column: 7 / 11;
-        grid-row: 15 / 22;
+        grid-row: 14 / 22;
         transform: translateY(8vh);
     }
 
@@ -83,29 +89,29 @@
 
     .introduce-fund {
         grid-column: 2 / 11;
-        grid-row: 26/32;
+        grid-row: 23/30;
         height: auto;
         /* transform: translateY(-8vh); */
     }
 
     .you__colourbox {
         grid-column: 1 / 13;
-        grid-row: 34/40;
+        grid-row: 31/36;
         z-index: -5;
         min-width: 100vw;
         /* transform: translateY(8vh); */
     }
 
     .photo--4 {
-        grid-column: 3 / 12;
-        grid-row: 36/42;
+        grid-column: 4 / 12;
+        grid-row: 33/39;
         /* transform: translateY(-4vh); */
 
     }
 
     .results {
         grid-column: 3 / 9;
-        grid-row: 45/49;
+        grid-row: 41/49;
         height: auto;
         max-width: 560px;
     }
