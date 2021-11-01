@@ -41,7 +41,7 @@ body {
 
 .photo--1 {
     position: relative;
-    background-image: url('media/photo/emmanuel-ikwuegbu-ZsObS42_i_0-unsplash.jpg');
+    background-image: url('media/photo/curtain.jpg');
     background-repeat: no-repeat;
     background-size: contain, cover;
     filter: saturate(0%)contrast(0.9);
@@ -50,7 +50,7 @@ body {
 
 
 .photo--2 {
-    background-image: url('media/photo/piotr-chrobot-6oUsyeYXgTg-unsplash.png');
+    background-image: url('media/photo/nairobi.png');
     background-repeat: no-repeat;
     background-size: contain, cover;
     filter: saturate(0%)contrast(0.9) brightness(150%);
@@ -76,7 +76,7 @@ body {
 
 
 .photo--3 {
-    background-image: url('media/photo/muhammadtaha-ibrahim-ma-aji-anwtuO4gNqc-unsplash.jpg');
+    background-image: url('media/photo/leaning.jpg');
     background-repeat: no-repeat;
     background-size: contain, cover;
     filter: saturate(0%)contrast(1.1) brightness(90%);
@@ -111,7 +111,7 @@ body {
 
 
 .photo--4 {
-    background-image: url('media/photo/emmanuel-ikwuegbu-_TyO_4qQizU-unsplash.jpg');
+    background-image: url('media/photo/skateboard.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     filter: saturate(0%)contrast(1.1) brightness(90%);
